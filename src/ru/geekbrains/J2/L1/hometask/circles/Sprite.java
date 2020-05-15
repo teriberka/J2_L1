@@ -1,8 +1,6 @@
 package ru.geekbrains.J2.L1.hometask.circles;
 
-import java.awt.*;
-
-public abstract class Sprite {
+public abstract class Sprite implements GameInterface {
     protected float x;
     protected float y;
     protected float halfWidth;
@@ -38,8 +36,4 @@ public abstract class Sprite {
     protected float getHeight() {
         return 2f * halfHeight;
     }
-
-    public void update(MainCanvas canvas, float deltaTime) {}
-    public void render(MainCanvas canvas, Graphics g) {}
-
 }
